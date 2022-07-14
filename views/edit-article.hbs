@@ -1,0 +1,13 @@
+<h1>Редактировать</h1>
+<div class="col card" style="width: 18rem;">
+  {{currentEntry}}
+  
+  <div class="card-body">
+
+    <form>
+      <input type="text" name="topic" value="{{currentEntry.topic}}">
+      <input type="text" name="text" value={{currentEntry.text}}>
+    <button class="saveButton" data-id={{currentEntry.id}}>Сохранить</button>
+    </form>
+  </div>
+</div>

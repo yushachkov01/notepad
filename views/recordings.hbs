@@ -1,0 +1,14 @@
+<div class="container">
+{{#each recordings}}
+<div class="col card">
+  <div>{{this.topic}}</div>
+  <hr>
+  <div>{{this.text}}</div>
+</div>
+
+<div>{{this.author.email}}</div>
+
+ <button class="removeBtn" data-id={{this.id}}>Удалить</button>
+ <button class="editBtn"><a href="/edit/{{this.id}}">Редактировать</a></button>
+{{/each}}
+</div>  
